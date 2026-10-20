@@ -6,7 +6,7 @@
 
 **遊戲網址：https://ethanzhung.github.io/hawk-mini-game/**
 
-此網址在 GitHub Pages 啟用並部署完成後可用。遊戲為純靜態網站，所有樣式、程式與角色都內嵌於 `docs/index.html`，不需要後端、帳號、API key 或額外套件。
+此網址在 GitHub Pages 啟用並部署完成後可用。遊戲為純靜態網站，所有樣式、程式與角色都內嵌於 `index.html`，不需要後端、帳號、API key 或額外套件。
 
 ## GitHub Pages 部署
 
@@ -14,10 +14,10 @@
 
 1. **Source** 選擇 `Deploy from a branch`。
 2. **Branch** 選擇 `main`。
-3. 資料夾選擇 `/docs`，按下 **Save**。
+3. 資料夾選擇 `/(root)`，按下 **Save**。
 4. 等待 GitHub Pages 部署成功，再開啟上方遊戲網址。
 
-之後更新 `main` 分支的 `docs/index.html`，GitHub Pages 就會重新部署。若頁面尚未更新，請確認 Pages 部署狀態並重新整理瀏覽器。
+之後更新 `main` 分支的 `index.html`，GitHub Pages 就會重新部署。若頁面尚未更新，請確認 Pages 部署狀態並重新整理瀏覽器。
 
 ## 遊戲方式
 
@@ -55,7 +55,7 @@
 下載或 clone 此專案後，在專案根目錄執行：
 
 ```sh
-python3 -m http.server 8000 --directory docs
+python3 -m http.server 8000
 ```
 
 接著在**自己的電腦**瀏覽器輸入 `http://localhost:8000`。遊戲無需 npm 安裝或建置。
@@ -65,11 +65,10 @@ python3 -m http.server 8000 --directory docs
 ```text
 hawk-mini-game/
 ├── README.md
-└── docs/
-    └── index.html    # 可獨立發布的完整遊戲
+└── index.html    # 可獨立發布的完整遊戲
 ```
 
-GitHub Pages 的入口為 `docs/index.html`，不需要另外維護下載資料夾。
+GitHub Pages 的入口為 `index.html`，不需要另外維護下載資料夾。
 
 ## 開發檢查
 
